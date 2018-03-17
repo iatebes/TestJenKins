@@ -29,7 +29,7 @@
                     <td>
                         <input type="submit" value="Cộng" />
                     </td>
-                    <td>Kết quả</td>
+                    <td>Kết quả abc</td>
                     <td><%=ketqua%></td>
                 </tr>
             </table>
