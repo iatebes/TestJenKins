@@ -1,3 +1,5 @@
+<%@page import="java.text.SimpleDateFormat"%>
+<%@page import="java.util.Calendar"%>
 <%@page import="media.testjenkins.MathClass"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -10,12 +12,14 @@
         so1 = (request.getParameter("so1") == null) ? "0" : request.getParameter("so1");
         so2 = (request.getParameter("so2") == null) ? "0" : request.getParameter("so2");
         ketqua = String.valueOf(math.plus(Integer.parseInt(so1), Integer.parseInt(so2)));
+        String timeStamp = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(Calendar.getInstance().getTime());
     %>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
     <body>
+        Server time: <%=timeStamp%>
         <form name="math" action="index.jsp" method="get">
             <table>
                 <tr>
