@@ -8,9 +8,9 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class HelloJUnitTest {
+public class MathJUnitTest {
 
-    public HelloJUnitTest() {
+    public MathJUnitTest() {
     }
 
     @BeforeClass
@@ -36,5 +36,11 @@ public class HelloJUnitTest {
     public void testPlus() {
         media.testjenkins.MathClass c = new MathClass();
         assertEquals("2 + 2 phai bang 4 moi dung", 4, c.plus(2, 2));
+    }
+    
+    @Test
+    public void testPlus2() {
+        media.testjenkins.MathClass c = new MathClass();
+        assertEquals("3 + 2 phai bang 5 moi dung", 5, c.plus(3, 2));
     }
 }
