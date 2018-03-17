@@ -50,7 +50,7 @@ public class MathJUnitTest {
     public ExpectedException exception = ExpectedException.none();
 
     @Test
-    public void testParameterNegative() throws Exception{
+    public void testParameterNegative() throws Exception {
         exception.expect(Exception.class);
         exception.expectMessage("Số truyền vào phải dương");
         MathClass t = new MathClass();
