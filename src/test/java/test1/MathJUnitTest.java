@@ -43,7 +43,7 @@ public class MathJUnitTest {
     @Test
     public void testPlus2() throws Exception {
         media.testjenkins.MathClass c = new MathClass();
-        assertEquals("3 + 2 phai bang 5 moi dung", 4, c.plus(3, 2));
+        assertEquals("3 + 2 phai bang 5 moi dung", 5, c.plus(3, 2));
     }
 
     @Rule
