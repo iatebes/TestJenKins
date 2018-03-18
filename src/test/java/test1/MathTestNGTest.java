@@ -57,25 +57,25 @@ public class MathTestNGTest {
         t.plus(-1, -2);
     }
     
-    @Test
-    public void testGUI() {
-        // Mo trang web
-        driver.get("http://118.70.183.219:8080/TestJenKins/");
-        
-        // nhap so 1
-        driver.findElement(By.id("so1")).sendKeys("6");
-        String so1 = driver.findElement(By.id("so1")).getAttribute("value");
-        
-        // nhap so 2
-        driver.findElement(By.id("so2")).sendKeys("7");
-        String so2 = driver.findElement(By.id("so2")).getAttribute("value");
-        
-        // an nut cong
-        driver.findElement(By.id("btnCong")).click();
-        
-        // doc ket qua
-        String ketqua = driver.findElement(By.xpath(".//*[@id='lblketqua']")).getText();
-//        System.out.println("so1:" + so1 + ", so2:" + so2 + ", ketqua:" + ketqua);
-        assertEquals("13", ketqua);
-    }
+//    @Test
+//    public void testGUI() {
+//        // Mo trang web
+//        driver.get("http://118.70.183.219:8080/TestJenKins/");
+//        
+//        // nhap so 1
+//        driver.findElement(By.id("so1")).sendKeys("6");
+//        String so1 = driver.findElement(By.id("so1")).getAttribute("value");
+//        
+//        // nhap so 2
+//        driver.findElement(By.id("so2")).sendKeys("7");
+//        String so2 = driver.findElement(By.id("so2")).getAttribute("value");
+//        
+//        // an nut cong
+//        driver.findElement(By.id("btnCong")).click();
+//        
+//        // doc ket qua
+//        String ketqua = driver.findElement(By.xpath(".//*[@id='lblketqua']")).getText();
+////        System.out.println("so1:" + so1 + ", so2:" + so2 + ", ketqua:" + ketqua);
+//        assertEquals("13", ketqua);
+//    }
 }
