@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class MathTestNGTest {
     
-    private static WebDriver driver;
+    //private static WebDriver driver;
     
     public MathTestNGTest() {
     }
@@ -22,13 +22,13 @@ public class MathTestNGTest {
 
     @org.testng.annotations.BeforeClass
     public static void setUpClass() throws Exception {
-        System.setProperty("webdriver.gecko.driver", "C:\\WebDriver\\geckodriver-v0.20.0-win64\\geckodriver.exe");
-        driver = new FirefoxDriver();
+        //System.setProperty("webdriver.gecko.driver", "C:\\WebDriver\\geckodriver-v0.20.0-win64\\geckodriver.exe");
+        //driver = new FirefoxDriver();
     }
 
     @org.testng.annotations.AfterClass
     public static void tearDownClass() throws Exception {
-        driver.close();
+        //driver.close();
     }
 
     @org.testng.annotations.BeforeMethod
