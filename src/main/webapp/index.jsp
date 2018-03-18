@@ -34,7 +34,7 @@
                         <input type="submit" value="Cộng" />
                     </td>
                     <td>Kết quả</td>
-                    <td><%=ketqua%></td>
+                    <td><span id="lblketqua"><%=ketqua%></span></td>
                 </tr>
             </table>
         </form>
