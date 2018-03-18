@@ -19,7 +19,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        Server time: <%=timeStamp%>
+        Update 18/03/2018 11:20. Server time: <%=timeStamp%>
         <form name="math" action="index.jsp" method="get">
             <table>
                 <tr>
