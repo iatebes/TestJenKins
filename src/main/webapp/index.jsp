@@ -31,7 +31,7 @@
                 <tr>
                     <td>&nbsp;</td>
                     <td>
-                        <input type="submit" value="Cộng" />
+                        <input id="btnCong" type="submit" value="Cộng" />
                     </td>
                     <td>Kết quả</td>
                     <td><span id="lblketqua"><%=ketqua%></span></td>
